@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.haanhgs.sqlitedatabasedemo.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/mniInsert"
+        android:name="com.haanhgs.sqlitedatabasedemo.ui.insert.InsertFragment"
+        android:label="@string/insert"
+        tools:layout="@layout/fragment_insert" />
+
+    <fragment
+        android:id="@+id/mniDelete"
+        android:name="com.haanhgs.sqlitedatabasedemo.ui.result.ResultFragment"
+        android:label="@string/delete"
+        tools:layout="@layout/fragment_result" />
+
+    <fragment
+        android:id="@+id/mniSearch"
+        android:name="com.haanhgs.sqlitedatabasedemo.ui.search.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/mniResult"
+        android:name="com.haanhgs.sqlitedatabasedemo.ui.result.ResultFragment"
+        android:label="@string/result"
+        tools:layout="@layout/fragment_result" />
+
+</navigation>

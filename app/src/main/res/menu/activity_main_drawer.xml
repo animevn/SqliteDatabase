@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/mniInsert"
+            android:icon="@drawable/insert"
+            android:title="@string/insert" />
+        <item
+            android:id="@+id/mniDelete"
+            android:icon="@drawable/delete"
+            android:title="@string/delete" />
+        <item
+            android:id="@+id/mniSearch"
+            android:icon="@drawable/search"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/mniResult"
+            android:icon="@drawable/all"
+            android:title="@string/result" />
+    </group>
+
+</menu>
