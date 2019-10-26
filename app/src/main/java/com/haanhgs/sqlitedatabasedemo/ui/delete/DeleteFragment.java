@@ -16,15 +16,15 @@ import com.haanhgs.sqlitedatabasedemo.R;
 
 public class DeleteFragment extends Fragment {
 
-    private DeleteViewModel sendViewModel;
+    private DeleteViewModel deleteViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
+        deleteViewModel =
                 ViewModelProviders.of(this).get(DeleteViewModel.class);
         View root = inflater.inflate(R.layout.fragment_delete, container, false);
         final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
+        deleteViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

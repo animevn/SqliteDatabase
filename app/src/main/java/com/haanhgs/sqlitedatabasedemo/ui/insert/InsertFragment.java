@@ -16,15 +16,15 @@ import com.haanhgs.sqlitedatabasedemo.R;
 
 public class InsertFragment extends Fragment {
 
-    private InsertViewModel galleryViewModel;
+    private InsertViewModel insertViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
+        insertViewModel =
                 ViewModelProviders.of(this).get(InsertViewModel.class);
         View root = inflater.inflate(R.layout.fragment_insert, container, false);
         final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(this, new Observer<String>() {
+        insertViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

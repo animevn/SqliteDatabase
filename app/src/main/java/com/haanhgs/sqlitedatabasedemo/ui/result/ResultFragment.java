@@ -16,15 +16,15 @@ import com.haanhgs.sqlitedatabasedemo.R;
 
 public class ResultFragment extends Fragment {
 
-    private ResultViewModel slideshowViewModel;
+    private ResultViewModel resultViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
+        resultViewModel =
                 ViewModelProviders.of(this).get(ResultViewModel.class);
         View root = inflater.inflate(R.layout.fragment_result, container, false);
         final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(this, new Observer<String>() {
+        resultViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
