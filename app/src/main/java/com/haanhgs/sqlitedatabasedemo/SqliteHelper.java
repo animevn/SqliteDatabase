@@ -22,7 +22,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
         String query = "create table " +
                 TABLE_NAME + "(" +
                 ID + " integer primary key autoincrement not null," +
-                NAME + "text not null, " +
+                NAME + " text not null, " +
                 AGE + " text not null);";
         db.execSQL(query);
     }

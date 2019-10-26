@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/mniDelete"
-        android:name="com.haanhgs.sqlitedatabasedemo.ui.result.ResultFragment"
+        android:name="com.haanhgs.sqlitedatabasedemo.ui.delete.DeleteFragment"
         android:label="@string/delete"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/fragment_delete" />
 
     <fragment
         android:id="@+id/mniSearch"

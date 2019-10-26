@@ -3,7 +3,6 @@ package com.haanhgs.sqlitedatabasedemo;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.text.TextUtils;
 
 public class DataHelper {
 
@@ -16,7 +15,7 @@ public class DataHelper {
 
     private SQLiteDatabase sqlite;
 
-    DataHelper(Context context){
+    public DataHelper(Context context){
         SqliteHelper helper = new SqliteHelper(context);
         sqlite = helper.getWritableDatabase();
     }
@@ -25,7 +24,7 @@ public class DataHelper {
         String query =  "insert into " +
                 TABLE_NAME + " (" +
                 NAME + ", " +
-                AGE + ") values ('" +name + "', '" + age + "');";
+                AGE + ") values ('" + name + "', '" + age + "');";
         sqlite.execSQL(query);
     }
 
@@ -44,9 +43,4 @@ public class DataHelper {
                 NAME + " = '" + name + "';";
         return sqlite.rawQuery(query, null);
     }
-
-    public static boolean isStringOk(String string){
-        return !TextUtils.isEmpty(string);
-    }
-
 }
