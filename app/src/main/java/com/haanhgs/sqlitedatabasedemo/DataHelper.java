@@ -13,7 +13,7 @@ public class DataHelper {
     private static final String ID = "id";
     private static final int VERSION = 1;
 
-    private SQLiteDatabase sqlite;
+    private final SQLiteDatabase sqlite;
 
     public DataHelper(Context context){
         SqliteHelper helper = new SqliteHelper(context);

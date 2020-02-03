@@ -1,4 +1,4 @@
-package com.haanhgs.sqlitedatabasedemo.ui.result;
+package com.haanhgs.sqlitedatabasedemo.ui.search;
 
 import android.database.Cursor;
 import com.haanhgs.sqlitedatabasedemo.App;
@@ -7,15 +7,17 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ResultViewModel extends ViewModel {
+public class SearchViewModel extends ViewModel {
 
-    private final MutableLiveData<String> text;
+    private final MutableLiveData<String> text = new MutableLiveData<>();
 
-    public ResultViewModel() {
-        text = new MutableLiveData<>();
+    public LiveData<String> getText() {
+        return text;
+    }
 
+    public void setText(String name){
         DataHelper helper = new DataHelper(App.context());
-        Cursor cursor = helper.selectAll();
+        Cursor cursor = helper.selectName(name);
         if (cursor != null){
             StringBuilder builder = new StringBuilder();
             while (cursor.moveToNext()){
@@ -26,9 +28,5 @@ public class ResultViewModel extends ViewModel {
             }
             text.setValue(builder.toString());
         }
-    }
-
-    public LiveData<String> getText() {
-        return text;
     }
 }
