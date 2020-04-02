@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.haanhgs.sqlitedatabasedemo.ui.home.HomeFragment"
+        android:name="com.haanhgs.sqlitedatabase.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/mniInsert"
-        android:name="com.haanhgs.sqlitedatabasedemo.ui.insert.InsertFragment"
+        android:name="com.haanhgs.sqlitedatabase.ui.insert.InsertFragment"
         android:label="@string/insert"
         tools:layout="@layout/fragment_insert" />
 
     <fragment
         android:id="@+id/mniDelete"
-        android:name="com.haanhgs.sqlitedatabasedemo.ui.delete.DeleteFragment"
+        android:name="com.haanhgs.sqlitedatabase.ui.delete.DeleteFragment"
         android:label="@string/delete"
         tools:layout="@layout/fragment_delete" />
 
     <fragment
         android:id="@+id/mniSearch"
-        android:name="com.haanhgs.sqlitedatabasedemo.ui.search.SearchFragment"
+        android:name="com.haanhgs.sqlitedatabase.ui.search.SearchFragment"
         android:label="@string/search"
         tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/mniResult"
-        android:name="com.haanhgs.sqlitedatabasedemo.ui.result.ResultFragment"
+        android:name="com.haanhgs.sqlitedatabase.ui.result.ResultFragment"
         android:label="@string/result"
         tools:layout="@layout/fragment_result" /><action android:id="@+id/action_global_nav_home" app:destination="@id/nav_home"/>
 

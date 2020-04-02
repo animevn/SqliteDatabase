@@ -1,4 +1,4 @@
-package com.haanhgs.sqlitedatabasedemo.ui.insert;
+package com.haanhgs.sqlitedatabase.ui.insert;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import com.haanhgs.sqlitedatabasedemo.DataHelper;
-import com.haanhgs.sqlitedatabasedemo.R;
+import com.haanhgs.sqlitedatabase.DataHelper;
+import com.haanhgs.sqlitedatabase.R;
 
 public class InsertFragment extends Fragment {
 

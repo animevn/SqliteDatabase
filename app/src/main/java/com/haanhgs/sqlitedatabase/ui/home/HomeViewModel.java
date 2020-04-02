@@ -1,4 +1,4 @@
-package com.haanhgs.sqlitedatabasedemo.ui.home;
+package com.haanhgs.sqlitedatabase.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

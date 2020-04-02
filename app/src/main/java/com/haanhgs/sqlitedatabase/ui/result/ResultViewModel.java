@@ -1,8 +1,8 @@
-package com.haanhgs.sqlitedatabasedemo.ui.result;
+package com.haanhgs.sqlitedatabase.ui.result;
 
 import android.database.Cursor;
-import com.haanhgs.sqlitedatabasedemo.App;
-import com.haanhgs.sqlitedatabasedemo.DataHelper;
+import com.haanhgs.sqlitedatabase.App;
+import com.haanhgs.sqlitedatabase.DataHelper;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;

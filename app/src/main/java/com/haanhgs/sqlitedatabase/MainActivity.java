@@ -1,4 +1,4 @@
-package com.haanhgs.sqlitedatabasedemo;
+package com.haanhgs.sqlitedatabase;
 
 import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

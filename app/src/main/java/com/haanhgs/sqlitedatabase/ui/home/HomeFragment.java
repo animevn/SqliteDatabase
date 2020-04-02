@@ -1,4 +1,4 @@
-package com.haanhgs.sqlitedatabasedemo.ui.home;
+package com.haanhgs.sqlitedatabase.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import com.haanhgs.sqlitedatabasedemo.R;
+import com.haanhgs.sqlitedatabase.R;
 
 public class HomeFragment extends Fragment {
 

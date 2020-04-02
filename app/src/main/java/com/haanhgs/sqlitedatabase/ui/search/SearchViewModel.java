@@ -1,8 +1,8 @@
-package com.haanhgs.sqlitedatabasedemo.ui.search;
+package com.haanhgs.sqlitedatabase.ui.search;
 
 import android.database.Cursor;
-import com.haanhgs.sqlitedatabasedemo.App;
-import com.haanhgs.sqlitedatabasedemo.DataHelper;
+import com.haanhgs.sqlitedatabase.App;
+import com.haanhgs.sqlitedatabase.DataHelper;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;

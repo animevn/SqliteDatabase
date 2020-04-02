@@ -1,4 +1,4 @@
-package com.haanhgs.sqlitedatabasedemo.ui.result;
+package com.haanhgs.sqlitedatabase.ui.result;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import com.haanhgs.sqlitedatabasedemo.R;
+import com.haanhgs.sqlitedatabase.R;
 
 public class ResultFragment extends Fragment {
 

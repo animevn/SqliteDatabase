@@ -1,4 +1,4 @@
-package com.haanhgs.sqlitedatabasedemo;
+package com.haanhgs.sqlitedatabase;
 
 import android.content.Context;
 import android.database.Cursor;
